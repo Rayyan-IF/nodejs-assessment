@@ -77,10 +77,12 @@ export const initCategoryModel = (sequelize: Sequelize) => {
     {
       sequelize,
       paranoid: true,
-      timestamps: false,
+      timestamps: true,
       modelName: 'Category',
       tableName: 'categories',
+      createdAt: 'created_at',
       deletedAt: 'deleted_at',
+      updatedAt: 'modified_at',
       hooks: {
         beforeUpdate: (category: Category) => {
           category.modified_at = new Date();

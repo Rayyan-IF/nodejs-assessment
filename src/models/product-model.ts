@@ -104,10 +104,12 @@ export const initProductModel = (sequelize: Sequelize) => {
     {
       sequelize,
       paranoid: true,
-      timestamps: false,
+      timestamps: true,
       modelName: 'Product',
       tableName: 'products',
+      createdAt: 'created_at',
       deletedAt: 'deleted_at',
+      updatedAt: 'modified_at',
       hooks: {
         beforeUpdate: (product: Product) => {
           product.modified_at = new Date();
