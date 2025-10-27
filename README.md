@@ -180,7 +180,7 @@ Cookie: refreshToken=<refresh_token_from_login>
 
 #### Create Category
 ```http
-POST /api/categories
+POST /categories
 Authorization: Bearer <access_token>
 Content-Type: application/json
 
@@ -191,19 +191,19 @@ Content-Type: application/json
 
 #### Get All Categories (with pagination & filter)
 ```http
-GET /api/categories?page=1&limit=10&category=tech
+GET /categories?page=1&limit=10&category=tech
 Authorization: Bearer <access_token>
 ```
 
 #### Get Category by ID
 ```http
-GET /api/categories/{category_id}
+GET /categories/{category_id}
 Authorization: Bearer <access_token>
 ```
 
 #### Update Category
 ```http
-PUT /api/categories/{category_id}
+PUT /categories/{category_id}
 Authorization: Bearer <access_token>
 Content-Type: application/json
 
@@ -214,7 +214,7 @@ Content-Type: application/json
 
 #### Delete Category
 ```http
-DELETE /api/categories/{category_id}
+DELETE /categories/{category_id}
 Authorization: Bearer <access_token>
 ```
 
@@ -222,7 +222,7 @@ Authorization: Bearer <access_token>
 
 #### Create Product
 ```http
-POST /api/products
+POST /products
 Authorization: Bearer <access_token>
 Content-Type: application/json
 
@@ -236,7 +236,7 @@ Content-Type: application/json
 
 #### Get All Products (with pagination)
 ```http
-GET /api/products?page=1&limit=10
+GET /products?page=1&limit=10
 Authorization: Bearer <access_token>
 ```
 
@@ -270,13 +270,13 @@ Authorization: Bearer <access_token>
 
 #### Get Product by ID
 ```http
-GET /api/products/{product_id}
+GET /products/{product_id}
 Authorization: Bearer <access_token>
 ```
 
 #### Update Product
 ```http
-PUT /api/products/{product_id}
+PUT /products/{product_id}
 Authorization: Bearer <access_token>
 Content-Type: application/json
 
@@ -289,13 +289,13 @@ Content-Type: application/json
 
 #### Delete Product
 ```http
-DELETE /api/products/{product_id}
+DELETE /products/{product_id}
 Authorization: Bearer <access_token>
 ```
 
 ## 🔐 Authentication
 
-Semua route di `/api/*` memerlukan JWT token di header:
+Semua route yang protected memerlukan JWT token di header:
 ```
 Authorization: Bearer <access_token>
 ```
