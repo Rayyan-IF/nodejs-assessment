@@ -1,5 +1,6 @@
 import express from "express";
 import cookieParser from "cookie-parser";
+import { apiRouter } from "../route/api.js";
 import {publicRouter} from "../route/public-api.js";
 import { errorMiddleware } from "../middleware/error-middleware.js";
 import { notFoundMiddleware } from "../middleware/not-found-middleware.js";
@@ -11,5 +12,6 @@ web.use(express.json());
 web.use(cookieParser());
 web.use(requestLoggingMiddleware);
 web.use(publicRouter);
+web.use(apiRouter);
 web.use(notFoundMiddleware);
 web.use(errorMiddleware);
