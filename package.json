@@ -1,0 +1,43 @@
+{
+  "name": "nodejs-assesment",
+  "version": "1.0.0",
+  "description": "Damessa Dental Clinic Assessment",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rayyan-IF/nodejs-assessment.git"
+  },
+  "author": "Rayyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rayyan-IF/nodejs-assessment/issues"
+  },
+  "homepage": "https://github.com/Rayyan-IF/nodejs-assessment#readme",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.15.3",
+    "sequelize": "^6.37.7",
+    "uuid": "^13.0.0",
+    "winston": "^3.18.3",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.4",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.9.3"
+  }
+}

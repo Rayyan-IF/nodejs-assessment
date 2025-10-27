@@ -1,0 +1,43 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "compilerOptions": {
+
+    // File Layout
+    "outDir": "./dist",
+    // "rootDir": "./src",
+
+    // Environment Settings
+    "target": "esnext",
+    "module": "es2022",
+    "moduleResolution": "node",
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    // "sourceMap": true,
+    // "declaration": true,
+    // "declarationMap": true,
+
+    // Stricter Typechecking Options
+    // "noUncheckedIndexedAccess": true,
+    // "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noUnusedLocals": true,
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
